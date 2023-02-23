@@ -1,27 +1,28 @@
 package com.seroja.crud;
 
+import com.seroja.controller.MainController;
+import com.seroja.factrory.ManufacturerFactory;
 import com.seroja.factrory.SouvenirFactory;
-import com.seroja.service.Service;
 import com.seroja.souvenirs.Manufacturer;
 import com.seroja.souvenirs.Souvenir;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
-public class SouvenirListCreation {
+public class Creator {
 
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     ArrayList<Souvenir> souvenirList = new ArrayList<>();
-    Service service = new Service();
+    ManufacturerFactory mfFactory = new ManufacturerFactory();
+    ArrayList<Manufacturer> mfList = new ArrayList<>();
     SouvenirFactory souvenirFactory = new SouvenirFactory();
+    MainController cnt = new MainController();
 
     public ArrayList<Souvenir> createSouvenirList(ArrayList<Manufacturer> mfList) throws IOException {
         System.out.println("Enter Souvenir's amount");
-        int souvenirsAmount = Integer.parseInt(reader.readLine());
+        int souvenirsAmount = Integer.parseInt(bufferedReader.readLine());
         while (souvenirsAmount != 0) {
             Souvenir souvenir = createSouvenir(mfList);
             souvenirList.add(souvenir);
@@ -31,21 +32,26 @@ public class SouvenirListCreation {
     }
 
     public Souvenir createSouvenir(ArrayList<Manufacturer> mfList) throws IOException {
-        System.out.println("Enter Souvenir name");
-        String souvenirName = reader.readLine();
-        System.out.println("Choose Manufacturer index");
-        mfList.forEach(System.out::println);
-        service.printManufacturerListWithIndex(mfList);
-        int mfIndex = Integer.parseInt(reader.readLine());
-        System.out.println("Enter Souvenir date of issue");
-        String date = reader.readLine();
-        DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate dateOfIssue = LocalDate.parse(date, dateFormat);
-        System.out.println("Enter price");
-        int price = Integer.parseInt(reader.readLine());
-        Souvenir souvenir = souvenirFactory.createSouvenir(souvenirName, mfList.get(mfIndex), dateOfIssue, price);
-        return souvenir;
+        return souvenirFactory.createSouvenir(cnt.getStringFromInput("Enter Souvenir name"), mfList.get(cnt.getMfIndex(mfList)),
+                cnt.getDateFromInput(), cnt.getIntFromInput("Enter price"));
     }
+
+    public ArrayList<Manufacturer> createManufacturerList() throws IOException {
+        System.out.println("Enter number of Manufacturer's");
+        int mfAmount = Integer.parseInt(bufferedReader.readLine());
+        while (mfAmount != 0) {
+            Manufacturer manufacturer = createManufacturer();
+            mfList.add(manufacturer);
+            mfAmount--;
+        }
+        return mfList;
+    }
+
+    public Manufacturer createManufacturer() throws IOException {
+        return mfFactory.createManufacturer(cnt.getStringFromInput("Enter Manufacturer's name"),
+                cnt.getStringFromInput("Enter Manufacturer's country"));
+    }
+
 
 
 }

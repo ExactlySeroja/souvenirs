@@ -4,25 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d8f134a-470f-4166-9eb3-a7db1b4f0d19" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2d8f134a-470f-4166-9eb3-a7db1b4f0d19" name="Changes" comment="Modified Main controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seroja/menu/UpdateMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/crud/Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/crud/Creator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/crud/Deleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/crud/Deleter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/crud/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/crud/Reader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/crud/Updater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/crud/Updater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/factrory/ManufacturerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/factrory/ManufacturerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/factrory/SouvenirFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/factrory/SouvenirFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/menu/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/menu/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/menu/PrintMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/menu/PrintMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/persistance/FileCleaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/persistance/FileCleaner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/persistance/FileWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/persistance/FileWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/service/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/souvenirs/Manufacturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/souvenirs/Manufacturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seroja/souvenirs/Souvenir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seroja/souvenirs/Souvenir.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +21,14 @@
       <list>
         <option value="Class" />
       </list>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="90399349-1611-40b2-b7d9-9c348a360b7e" />
+        <option name="url" value="https://github.com/ExactlySeroja/souvenirs.git" />
+      </UrlAndAccount>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
@@ -117,11 +112,26 @@
       <workItem from="1677072292045" duration="495000" />
       <workItem from="1677079185357" duration="93000" />
       <workItem from="1677081041552" duration="200000" />
-      <workItem from="1677163621599" duration="1614000" />
+      <workItem from="1677163621599" duration="1748000" />
+      <workItem from="1677231127948" duration="948000" />
+      <workItem from="1677513553532" duration="758000" />
+      <workItem from="1677579186160" duration="1445000" />
     </task>
+    <task id="LOCAL-00001" summary="Modified Main controller">
+      <created>1677165363797</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677165363797</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modified Main controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified Main controller" />
   </component>
 </project>

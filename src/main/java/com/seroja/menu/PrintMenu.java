@@ -41,12 +41,12 @@ public class PrintMenu {
                 default -> System.out.println("Wrong actions");
             }
         } catch (IOException e){
-            System.out.println("Unexpected input exception!");
+            System.err.println("Unexpected input exception!");
         }
         catch (ClassNotFoundException e ){
-            System.out.println("The class was not found in the given classpath!");
+            System.err.println("The class was not found in the given classpath!");
         } catch (NumberFormatException e){
-            System.out.println("Wrong data type!");
+            System.err.println("Wrong data type!");
         }
     }
 
